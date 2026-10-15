@@ -1,0 +1,326 @@
+/* CONFIGURACION GENERAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:black;
+    color:white;
+}
+/* MAIN HEADER */
+
+.header-prime {
+    background-color: black;
+    width: 100%;
+    min-height: 90px;
+    padding: 0 35px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+
+.logo img {
+    height: 65px;
+    width: auto;
+    display: block;
+}
+
+/* NAVIGATION MENU */
+
+.header-prime nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 0;
+}
+
+/* MENU LINKS */
+
+.header-prime nav a {
+    color: #ff6600;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    white-space: nowrap;
+}
+.header-prime nav a:hover {
+    color: white;
+    transition: color 0.3s;
+}
+/* SIGN IN BUTTON */
+
+.header-prime nav .signin-btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.header-prime nav .signin-btn:hover {
+    background-color: #e65c00;
+    color: white;
+}
+
+/* SECCIONES */
+
+section {
+padding: 80px 40px;
+text-align: center;
+}
+
+
+/* HOME */
+
+.principal {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 100px 40px;
+    min-height: 70vh;
+}
+
+    .subtitle {
+        color: #ff6600;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        margin-bottom: 20px;
+        } 
+    .principal h2 {
+    font-size: 55px;
+    color: #ff6600;
+    margin-bottom: 20px;
+    }
+    
+    .principal h3 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    }
+    
+    .principal p {
+    font-size: 20px;
+    max-width: 900px;
+    margin: auto;
+    }
+
+/* BUTTON */
+
+button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e65c00;
+}
+
+/* CARDS SECTION */
+
+.cards {
+    text-align: center;
+}
+
+.tarjetas {
+    text-align: center;
+}
+
+.tarjeta {
+    display: inline-block;
+    width: 25%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #111;
+    color: white;
+    border-radius: 10px;
+}
+
+
+/* PRIME STATISTICS */
+
+.stats {
+display: flex;
+justify-content: center;
+gap: 40px;
+flex-wrap: wrap;
+margin-top: 60px;
+}
+
+.stat {
+background-color: #111;
+width: 220px;
+padding: 35px 20px;
+border-radius: 12px;
+}
+
+.stat h2 {
+color: #ff6600;
+font-size: 50px;
+}
+
+.stat p {
+color: white;
+}
+
+.stat:hover {
+transform: translateY(-5px);
+transition: 0.3s;
+border: 1px solid #ff6600;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+section{
+    padding:50px;
+    }
+    
+    h2{
+    color:#ff6600;
+    text-align:center;
+    font-size:35px;
+    }
+    
+    h3{
+    color:white;
+    }
+    
+    /* COURTS CARDS */
+     
+    .tarjeta {
+    display: inline-block;
+    width: 280px;
+    margin: 15px;
+    padding: 30px;
+    background-color: #111;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    }
+    
+    .tarjeta:hover {
+    background-color: #222;
+    border: 1px solid #ff6600;
+    transform: translateY(-5px);
+    transition: 0.3s;
+    }
+    
+    /* CONTACT FORM */
+    
+    form {
+    text-align: center;
+    }
+    
+    input,
+    textarea {
+    width: 350px;
+    padding: 12px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    }
+    
+    textarea {
+    height: 120px;
+    }
+    
+    /* COURTS, COMMUNITY AND CONTACT */
+    
+    #Community,
+    #Courts,
+    #Contact {
+    text-align: center;
+    }
+    .subtitle{
+        color:#ff6600;
+        letter-spacing:4px;
+        font-size:12px;
+        font-weight:bold;
+        text-transform:uppercase;
+    }
+    
+    #Profile,
+    #FeaturedCourts,
+    #Login,
+    #Teams,
+    #Impact,
+    #Blog,
+    #Contact{
+        padding:100px 60px;
+    }
+    
+    #Profile h2,
+    #FeaturedCourts h2,
+    #Login h2,
+    #Teams h2,
+    #Impact h2,
+    #Blog h2,
+    #Contact h2{
+        font-size:55px;
+        font-weight:900;
+        text-transform:uppercase;
+    }
+    
+    .stats{
+        display:flex;
+        justify-content:center;
+        gap:30px;
+        flex-wrap:wrap;
+    }
+    
+    .stat{
+        background:#111;
+        width:220px;
+        padding:30px;
+        border-radius:12px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
