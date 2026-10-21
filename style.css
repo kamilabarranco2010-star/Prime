@@ -11,19 +11,20 @@ body {
     background-color: black;
     width: 100%;
     min-height: 90px;
-    padding: 0 35px;
+    padding: 0 6%;
     box-sizing: border-box;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #222222;
 }
 
 /* LOGO */
 
 .logo img {
-    height: 65px;
+    height: 58px;
     width: auto;
     display: block;
 }
@@ -33,7 +34,7 @@ body {
 .header-prime nav {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 32px;
     padding: 0;
 }
 
@@ -44,8 +45,8 @@ body {
     text-decoration: none;
     font-family: Arial, sans-serif;
     font-size: 20px;
-    font-weight: normal;
-    white-space: nowrap;
+    font-weight: 500;
+    letter-spacing: 0.3px;
 }
 .header-prime nav a:hover {
     color: white;
@@ -57,14 +58,26 @@ body {
     background-color: #ff6600;
     color: white;
     padding: 12px 30px;
-    border-radius: 30px;
-    font-size: 16px;
+    border-radius: 6px;
+    font-size: 13px;
     font-weight: bold;
     text-align: center;
+    letter-spacing: 0.5px;
+
+    transition:
+        background-color 0.25s ease,
+        transform 0.25s ease;
 }
 .header-prime nav .signin-btn:hover {
     background-color: #e65c00;
     color: white;
+}
+
+/* ACCESIBILIDAD: FOCO DE TECLADO */
+
+.header-prime nav a:focus-visible {
+    outline: 2px solid #ff6600;
+    outline-offset: 4px;
 }
 
 /* SECCIONES */
@@ -317,6 +330,80 @@ section{
     }
 
 
+/* ==============================
+   RESPONSIVE - HEADER
+================================ */
+
+/* TABLETS Y PANTALLAS MEDIANAS */
+@media (max-width: 900px) {
+
+    .header-prime {
+        padding: 16px 4%;
+        gap: 20px;
+    }
+
+    .header-prime nav {
+        gap: 18px;
+    }
+
+    .header-prime nav a {
+        font-size: 13px;
+    }
+
+    .logo img {
+        height: 52px;
+    }
+}
+
+/* CELULARES */
+@media (max-width: 650px) {
+
+    .header-prime {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 16px 5%;
+        gap: 18px;
+    }
+
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo img {
+        height: 48px;
+    }
+
+    .header-prime nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px 20px;
+    }
+
+    .header-prime nav a {
+        font-size: 12px;
+    }
+
+    .header-prime nav .signin-btn {
+        padding: 10px 20px;
+        border-radius: 24px;
+    }
+}
+
+/* CELULARES MUY ESTRECHOS */
+@media (max-width: 380px) {
+
+    .header-prime nav {
+        gap: 12px;
+    }
+
+    .header-prime nav a {
+        font-size: 11px;
+    }
+}
 
 
 
