@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prime 2026</title>
-   <link rel="stylesheet" href="style.css">
-</head>
 
+    <title>Prime 2026</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Tu CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
 <body>
 <!-- HEADER -->
 
@@ -68,6 +86,104 @@
         </div>
 
     </div>
+    <!-- PRIME SPORTS DISCOVERY CAROUSEL -->
+<div id="homeCarousel"
+     class="carousel slide home-carousel"
+     data-bs-ride="carousel"
+     data-bs-interval="3000">
+
+    <div class="carousel-inner">
+
+        <!-- 1. Estadio Mariano Rivera -->
+        <div class="carousel-item active">
+            <img src="Imagen.6.jpeg"
+                 alt="Estadio Mariano Rivera">
+            <div class="carousel-caption">
+                <p class="carousel-label">DISCOVER PRIME</p>
+                <h2>ESTADIO MARIANO RIVERA</h2>
+                <p>Discover your next place to play.</p>
+            </div>
+        </div>
+
+        <!-- 2. Complejo Deportivo 28 de Noviembre -->
+        <div class="carousel-item">
+            <img src="Image.7.jpeg"
+                 alt="Complejo Deportivo 28 de Noviembre">
+            <div class="carousel-caption">
+                <p class="carousel-label">YOUR NEXT GAME STARTS HERE</p>
+                <h2>COMPLEJO DEPORTIVO 28 DE NOVIEMBRE</h2>
+                <p>Train, connect and enjoy the game.</p>
+            </div>
+        </div>
+
+        <!-- 3. Lion Boxing Club -->
+        <div class="carousel-item">
+            <img src="Imagen.8.jpeg"
+                 alt="Lion Boxing Club">
+            <div class="carousel-caption">
+                <p class="carousel-label">PUSH YOUR LIMITS</p>
+                <h2>LION BOXING CLUB</h2>
+                <p>Strength, discipline and determination.</p>
+            </div>
+        </div>
+
+        <!-- 4. INFINITI Sport Center -->
+        <div class="carousel-item">
+            <img src="Imagen.5.jpeg"
+                 alt="INFINITI Sport Center">
+            <div class="carousel-caption">
+                <p class="carousel-label">FIND YOUR COURT</p>
+                <h2>INFINITI SPORT CENTER</h2>
+                <p>Your next sporting experience awaits.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Flecha anterior -->
+    <button class="carousel-control-prev"
+            type="button"
+            data-bs-target="#homeCarousel"
+            data-bs-slide="prev"
+            aria-label="Previous slide">
+        <span class="carousel-control-prev-icon"
+              aria-hidden="true"></span>
+    </button>
+
+    <!-- Flecha siguiente -->
+    <button class="carousel-control-next"
+            type="button"
+            data-bs-target="#homeCarousel"
+            data-bs-slide="next"
+            aria-label="Next slide">
+        <span class="carousel-control-next-icon"
+              aria-hidden="true"></span>
+    </button>
+
+    <!-- Indicadores -->
+    <div class="carousel-indicators">
+        <button type="button"
+                data-bs-target="#homeCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"></button>
+        <button type="button"
+                data-bs-target="#homeCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+        <button type="button"
+                data-bs-target="#homeCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        <button type="button"
+                data-bs-target="#homeCarousel"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+    </div>
+
+</div>
+<!-- END PRIME SPORTS DISCOVERY CAROUSEL -->
 
 </section>
     <!-- PROFILE -->
@@ -107,7 +223,6 @@
     <!-- COURTS -->
 
     <section id="Courts">
-
     <div class="courts-header">
         <div class="courts-heading">
             <p class="subtitle">SPORTS COURTS</p>
@@ -321,3 +436,86 @@
 </body>
 
 </html>
+<!-- ===== CARRUSEL PRINCIPAL ===== -->
+<section class="prime-carousel-section">
+    <div id="carouselStackedBottom"
+         clase="diapositiva de carrusel"
+         data-bs-ride="carrusel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagenes/imagen1.png"
+                     clase="d-block w-100"
+                     alt="Primera imagen">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/imagen2.png"
+                     clase="d-block w-100"
+                     alt="Segunda imagen">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/imagen3.png"
+                     clase="d-block w-100"
+                     alt="Tercera imagen">
+            </div>
+        </div>
+        <button class="carousel-control-prev"
+                tipo="botón"
+                data-bs-target="#carruselStackedBottom"
+                data-bs-slide="prev"
+                aria-label="Imagen anterior">
+            <span class="carousel-control-prev-icon"
+                  aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next"
+                tipo="botón"
+                data-bs-target="#carruselStackedBottom"
+                data-bs-slide="siguiente"
+                aria-label="Imagen siguiente">
+            <span class="carousel-control-next-icon"
+                  aria-hidden="true"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button"
+                    data-bs-target="#carruselStackedBottom"
+                    data-bs-slide-to="0"
+                    clase="activa"
+                    aria-current="true"
+                    aria-label="Imagen 1"></button>
+            <button type="button"
+                    data-bs-target="#carruselStackedBottom"
+                    data-bs-slide-a="1"
+                    aria-label="Imagen 2"></button>
+            <button type="button"
+                    data-bs-target="#carruselStackedBottom"
+                    data-bs-slide-a="2"
+                    aria-label="Imagen 3"></button>
+        </div>
+    </div>
+</section>
+<!-- ===== FIN DEL CARRUSEL ===== -->
+    <!-- Sección principal -->
+    <main class="hero">
+        <section class="hero-content">
+            <p class="eyebrow">PLATAFORMA DEPORTIVA</p>
+            <h1>
+                CONECTA, ENTRENA<br>
+                Y JUEGA,<br>
+                CON PRIME.
+            </h1>
+            <p class="description">
+                Encuentra canchas, conoce entrenadores certificados y organízate<br class="desktop-break">
+                Partidos con una comunidad deportiva, todo en un mismo lugar.
+            </p>
+            <div class="hero-divider"></div>
+        </section>
+    </main>
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+
+
+    
