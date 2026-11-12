@@ -1,219 +1,41 @@
-/* CELULARES */
-@media (max-width: 650px) {
+/* =======================================================
+   PRIME 2026 - HOJA DE ESTILOS LIMPIA Y ORGANIZADA
+   (misma apariencia, sin duplicados ni conflictos)
+======================================================= */
 
-    .header-prime {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 16px 5%;
-        gap: 18px;
-    }
-
-    .logo {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .logo img {
-        height: 48px;
-    }
-
-    .header-prime nav {
-        width: 100%;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 14px 20px;
-    }
-
-    .header-prime nav a {
-        font-size: 12px;
-    }
-
-    .header-prime nav .signin-btn {
-        padding: 10px 20px;
-    }
-}
-
-/* PRIME ELITE - COURTS */
-
-#Courts {
-    padding: 90px 6%;
-    background-color: #080808;
-    text-align: center;
-}
-
-#Courts > h2 {
-    max-width: 850px;
-    margin: 18px auto;
-    line-height: 1.15;
-    font-size: clamp(30px, 4vw, 46px);
-}
-
-#Courts .tarjeta {
-    box-sizing: border-box;
-    width: min(100%, 320px);
-    min-height: 210px;
-    margin: 14px;
-    padding: 32px 26px;
-
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-
-    background: #111111;
-    border: 1px solid #292929;
-    border-radius: 12px;
-
-    text-align: left;
-    vertical-align: top;
-
-    transition:
-        transform 0.25s ease,
-        border-color 0.25s ease,
-        background-color 0.25s ease;
-}
-
-#Courts .tarjeta:hover {
-    transform: translateY(-5px);
-    background-color: #151515;
-    border-color: #ff6600;
-}
-
-#Courts .tarjeta h3 {
-    margin-top: 0;
-    color: #ffffff;
-    font-size: 22px;
-}
-
-#Courts .tarjeta p {
-    color: #bdbdbd;
-    font-size: 14px;
-    line-height: 1.7;
-}
-
-@media (max-width: 600px) {
-    #Courts {
-        padding: 65px 5%;
-    }
-
-     #Courts .tarjeta {
-        width: 100%;
-        max-width: 380px;
-        margin: 10px 0;
-    }
-}/* CONFIGURACION GENERAL */
+/* =======================================================
+   1. CONFIGURACION GENERAL
+======================================================= */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color:black;
-    color:white;
+    background-color: #000;
+    color: #fff;
 }
-/* MAIN HEADER */
-
-.header-prime {
-    background-color: black;
-    width: 100%;
-    min-height: 90px;
-    padding: 0 35px;
-    box-sizing: border-box;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* LOGO */
-
-.logo img {
-    height: 65px;
-    width: auto;
-    display: block;
-}
-
-/* NAVIGATION MENU */
-
-.header-prime nav {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    padding: 0;
-}
-
-/* MENU LINKS */
-
-.header-prime nav a {
-    color: #ff6600;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    white-space: nowrap;
-}
-.header-prime nav a:hover {
-    color: white;
-    transition: color 0.3s;
-}
-/* SIGN IN BUTTON */
-
-.header-prime nav .signin-btn {
-    background-color: #ff6600;
-    color: white;
-    padding: 12px 30px;
-    border-radius: 30px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-}
-.header-prime nav .signin-btn:hover {
-    background-color: #e65c00;
-    color: white;
-}
-
-/* SECCIONES */
 
 section {
-padding: 80px 40px;
-text-align: center;
-}
-
-
-/* HOME */
-
-.principal {
-    background-color: #000;
-    color: white;
+    padding: 50px;
     text-align: center;
-    padding: 100px 40px;
-    min-height: 70vh;
 }
 
-    .subtitle {
-        color: #ff6600;
-        font-size: 14px;
-        font-weight: bold;
-        letter-spacing: 5px;
-        margin-bottom: 20px;
-        } 
-    .principal h2 {
-    font-size: 55px;
+h2 {
     color: #ff6600;
-    margin-bottom: 20px;
-    }
-    
-    .principal h3 {
-    font-size: 45px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    }
-    
-    .principal p {
-    font-size: 20px;
-    max-width: 900px;
-    margin: auto;
-    }
+    text-align: center;
+    font-size: 35px;
+}
 
-/* BUTTON */
+h3 {
+    color: #fff;
+}
+
+.subtitle {
+    color: #ff6600;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
 
 button {
     background-color: #ff6600;
@@ -228,526 +50,187 @@ button:hover {
     background-color: #e65c00;
 }
 
-/* CARDS SECTION */
-
-.cards {
-    text-align: center;
+/* =======================================================
+   2. HEADER Y NAVEGACION
+======================================================= */
+.header-prime {
+    background-color: #000;
+    width: 100%;
+    min-height: 90px;
+    padding: 0 35px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.tarjetas {
-    text-align: center;
+.logo img {
+    height: 65px;
+    width: auto;
+    display: block;
 }
 
-.tarjeta {
-    display: inline-block;
-    width: 25%;
-    margin: 10px;
-    padding: 20px;
-    background-color: #111;
-    color: white;
-    border-radius: 10px;
+.header-prime nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 0;
 }
 
-
-/* PRIME STATISTICS */
-
-.stats {
-display: flex;
-justify-content: center;
-gap: 40px;
-flex-wrap: wrap;
-margin-top: 60px;
-}
-
-.stat {
-background-color: #111;
-width: 220px;
-padding: 35px 20px;
-border-radius: 12px;
-}
-
-.stat h2 {
-color: #ff6600;
-font-size: 50px;
-}
-
-.stat p {
-color: white;
-}
-
-.stat:hover {
-transform: translateY(-5px);
-transition: 0.3s;
-border: 1px solid #ff6600;
-}
-
-/* FOOTER */
-
-footer {
-    background-color: #111;
-    color: white;
-    text-align: center;
-    padding: 30px;
-    margin-top: 50px;
-}
-
-footer p {
-    margin: 0;
-    font-size: 16px;
-}
-section{
-    padding:50px;
-    }
-    
-    h2{
-    color:#ff6600;
-    text-align:center;
-    font-size:35px;
-    }
-    
-    h3{
-    color:white;
-    }
-    
-    /* COURTS CARDS */
-     
-    .tarjeta {
-    display: inline-block;
-    width: 280px;
-    margin: 15px;
-    padding: 30px;
-    background-color: #111;
-    border-radius: 12px;
-    text-align: center;
-    color: white;
-    }
-    
-    .tarjeta:hover {
-    background-color: #222;
-    border: 1px solid #ff6600;
-    transform: translateY(-5px);
-    transition: 0.3s;
-    }
-    
-    /* CONTACT FORM */
-    
-    form {
-    text-align: center;
-    }
-    
-    input,
-    textarea {
-    width: 350px;
-    padding: 12px;
-    margin: 10px;
-    border: none;
-    border-radius: 8px;
+.header-prime nav a {
+    color: #ff6600;
+    text-decoration: none;
     font-family: Arial, sans-serif;
-    }
-    
-    textarea {
-    height: 120px;
-    }
-    
-    /* COURTS, COMMUNITY AND CONTACT */
-    
-    #Community,
-    #Courts,
-    #Contact {
+    font-size: 20px;
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+.header-prime nav a:hover {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.header-prime nav .signin-btn {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
     text-align: center;
-    }
-    .subtitle{
-        color:#ff6600;
-        letter-spacing:4px;
-        font-size:12px;
-        font-weight:bold;
-        text-transform:uppercase;
-    }
-    
-    #Profile,
-    #FeaturedCourts,
-    #Login,
-    #Teams,
-    #Impact,
-    #Blog,
-    #Contact{
-        padding:100px 60px;
-    }
-    
-    #Profile h2,
-    #FeaturedCourts h2,
-    #Login h2,
-    #Teams h2,
-    #Impact h2,
-    #Blog h2,
-    #Contact h2{
-        font-size:55px;
-        font-weight:900;
-        text-transform:uppercase;
-    }
-    
-    .stats{
-        display:flex;
-        justify-content:center;
-        gap:30px;
-        flex-wrap:wrap;
-    }
-    
-    .stat{
-        background:#111;
-        width:220px;
-        padding:30px;
-        border-radius:12px;
-    }
+}
 
-/* ==================================
-   PRIME ELITE - RESPONSIVE HEADER
-================================== */
+.header-prime nav .signin-btn:hover {
+    background-color: #e65c00;
+    color: #fff;
+}
 
-/* TABLETS Y PANTALLAS MEDIANAS */
+/* Header responsive */
 @media (max-width: 900px) {
-
     .header-prime {
         padding-left: 4%;
         padding-right: 4%;
         gap: 20px;
     }
+    .header-prime nav { gap: 18px; }
+    .logo img { height: 52px; }
+}
 
-    .header-prime nav {
+@media (max-width: 650px) {
+    .header-prime {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 16px 5%;
         gap: 18px;
     }
-
-    .logo img {
-        height: 52px;
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
-}
-
-/* =====================================
-   COURTS SECTION - PRIME SPORTS
-===================================== */
-
-/* Fondo y espacio de la sección */
-#Courts {
-    background-color: #ffffff;
-    color: #111111;
-    padding: 40px  max(24px, 3.5%);
-    text-align: left;
-    box-sizing: border-box;
-}
-
-/* Encabezado y botón del mapa */
-#Courts .courts-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: 30px;
-    margin-bottom: 25px;
-}
-
-#Courts .courts-heading {
-    min-width: 0;
-}
-
-/* Texto SPORTS COURTS */
-#Courts .subtitle {
-    color: #ff4d1a;
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin: 0 0 12px;
-}
-
-#Courts .subtitle::before {
-    content: "";
-    display: inline-block;
-    width: 22px;
-    height: 2px;
-    background-color: #ff4d1a;
-    vertical-align: middle;
-    margin-right: 10px;
-}
-
-/* Título principal */
-#Courts .courts-heading h2 {
-    color: #111111;
-    text-align: left;
-    font-family: Impact, "Arial Narrow", sans-serif;
-    font-size: clamp(38px, 4.5vw, 64px);
-    font-weight: 900;
-    line-height: 0.92;
-    letter-spacing: -1px;
-    text-transform: uppercase;
-    margin: 0;
-    max-width: 650px;
-}
-
-/* Botón View Interactive Map */
-#Courts .map-btn {
-    flex-shrink: 0;
-    background-color: #101426;
-    color: #ffffff;
-    padding: 19px 30px;
-    border: none;
-    border-radius: 40px;
-    font-size: 17px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#Courts .map-btn:hover {
-    background-color: #282e45;
-}
-
-/* Filtro All Sports */
-#Courts .courts-filter {
-    margin: 28px 0 32px;
-}
-
-#Courts .filter-btn {
-    background-color: #f0f2f5;
-    color: #111111;
-    border: 1px solid #e1e4e8;
-    padding: 11px 22px;
-    border-radius: 30px;
-    font-size: 14px;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-/* Contenedor de las tres tarjetas */
-#Courts .courts-container {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 26px;
-    align-items: stretch;
-}
-
-/* Tarjetas */
-#Courts .tarjeta {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-width: 0;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f7f8fa;
-    color: #111111;
-    border: 1px solid #e0e3e8;
-    border-radius: 19px;
-    overflow: hidden;
-    text-align: left;
-    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
-    transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
-}
-
-#Courts .tarjeta:hover {
-    background-color: #f7f8fa;
-    transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
-}
-
-/* Imagen y calificación */
-#Courts .court-image {
-    position: relative;
-    width: 100%;
-    height: 215px;
-    overflow: hidden;
-}
-
-#Courts .court-image img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-/* Estrella y puntuación */
-#Courts .rating {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background-color: #ffffff;
-    color: #111111;
-    padding: 8px 12px;
-    border-radius: 9px;
-    font-size: 13px;
-    font-weight: 700;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-}
-
-/* Información de cada cancha */
-#Courts .court-info {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    padding: 17px 22px 21px;
-}
-
-/* Nombre */
-#Courts .court-info h3 {
-    color: #111111;
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.25;
-    margin: 0 0 5px;
-}
-
-/* Ubicación */
-#Courts .location {
-    color: #667085;
-    font-size: 14px;
-    margin: 0 0 18px;
-}
-
-/* Precio por hora */
-#Courts .court-price {
-    display: flex;
-    align-items: baseline;
-    gap: 9px;
-    margin-top: auto;
-    margin-bottom: 19px;
-}
-
-#Courts .price {
-    color: #111111;
-    font-size: 28px;
-    font-weight: 900;
-}
-
-#Courts .per-hour {
-    color: #667085;
-    font-size: 13px;
-}
-
-/* Botón Book Court */
-#Courts .book-btn {
-    width: 100%;
-    background: linear-gradient(100deg, #ff4d16, #ff7100);
-    color: #ffffff;
-    border: none;
-    border-radius: 12px;
-    padding: 15px 18px;
-    font-size: 15px;
-    font-weight: 700;
-    cursor: pointer;
-    box-shadow: 0 5px 12px rgba(255, 87, 0, 0.20);
-    transition: transform 0.2s ease,
-                filter 0.2s ease;
-}
-
-#Courts .book-btn:hover {
-    filter: brightness(0.94);
-    transform: translateY(-2px);
-}
-
-/* =====================================
-   RESPONSIVE - TABLETS
-===================================== */
-@media (max-width: 1000px) {
-    #Courts .courts-container {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 20px;
+    .logo img { height: 48px; }
+    .header-prime nav {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px 20px;
     }
-
-    #Courts .courts-heading h2 {
-        font-size: clamp(38px, 5vw, 54px);
-    }
-
-    #Courts .court-image {
-        height: 200px;
-    }
+    .header-prime nav a { font-size: 12px; }
+    .header-prime nav .signin-btn { padding: 10px 20px; }
+}
+/* =======================================================
+   3. HOME (seccion principal)
+======================================================= */
+.principal {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 100px 40px;
+    min-height: 70vh;
 }
 
-/* =====================================
-   RESPONSIVE - CELULARES
-===================================== */
-@media (max-width: 650px) {
-    #Courts {
-        padding: 35px 18px;
-    }
+.principal h2 { font-size: 55px; color: #ff6600; margin-bottom: 20px; }
+.principal h3 { font-size: 45px; font-weight: bold; margin-bottom: 20px; }
+.principal p { font-size: 20px; max-width: 900px; margin: auto; }
 
-    #Courts .courts-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 22px;
-    }
-
-    #Courts .courts-heading h2 {
-        font-size: clamp(36px, 9vw, 48px);
-    }
-
-    #Courts .map-btn {
-        padding: 14px 22px;
-        font-size: 14px;
-    }
-
-    #Courts .courts-filter {
-        margin: 24px 0;
-    }
-
-    #Courts .courts-container {
-        grid-template-columns: 1fr;
-        gap: 22px;
-    }
-
-    #Courts .court-image {
-        height: 220px;
-    }
-
-    #Courts .court-info {
-        padding: 17px;
-    }
-}
-
-/* ===== HOME: ALINEAR CONTENIDO A LA IZQUIERDA ===== */
+/* Home a ancho completo (el carrusel manda) */
 #Home.principal {
+    padding: 0 !important;
+    min-height: auto;
     text-align: left !important;
-    padding: 80px 7% 40px !important;
+    box-sizing: border-box;
 }
 
-#Home > .subtitle,
-#Home > h2,
-#Home > h3,
-#Home > p:not(.subtitle) {
+#Home .home-content {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
     text-align: left !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
 }
 
-#Home > p:not(.subtitle) {
-    max-width: 650px !important;
+#Home .home-content > .subtitle {
+    text-align: left !important;
+    margin: 0 0 48px !important;
+    color: #ff6600;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 5px;
 }
 
-#Home > h2 {
-    margin-top: 30px;
-    margin-bottom: 35px;
+#Home .home-content h1 {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif !important;
+    font-size: clamp(48px, 6vw, 78px) !important;
+    font-weight: 900 !important;
+    line-height: 1.05;
+    letter-spacing: -1px;
+    color: #fff !important;
+    text-align: left !important;
+    margin: 0 !important;
 }
 
-#Home > h3 {
-    max-width: 600px;
+#Home .home-content h1 span {
+    color: #ff6600 !important;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif !important;
+    font-weight: 900 !important;
 }
 
-#Home .stats {
-    justify-content: flex-start !important;
-    margin-top: 70px !important;
+#Home .home-content .home-description {
+    text-align: left !important;
+    margin: 38px 0 0 !important;
+    max-width: 800px;
+    color: #d0d0d0;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.8;
+    letter-spacing: 0.2px;
 }
 
-/* CENTRAR LAS TARJETAS DE ESTADÍSTICAS DE HOME */
+@media (max-width: 650px) {
+    #Home .home-content > .subtitle {
+        font-size: 13px;
+        letter-spacing: 3px;
+        margin-bottom: 32px !important;
+    }
+    #Home .home-content .home-description {
+        font-size: 16px;
+        line-height: 1.7;
+        margin-top: 28px !important;
+    }
+}
 
+/* Estadisticas del Home */
 #Home .stats {
     display: flex;
     justify-content: center !important;
     align-items: stretch;
-    gap: 100px;
     flex-wrap: wrap;
     width: 100%;
-    margin: 60px auto 0 !important;
+    gap: 60px;
+    padding: 90px 7% 100px !important;
+    margin: 0 !important;
 }
 
 #Home .stat {
@@ -762,161 +245,69 @@ section{
     text-align: center;
     background-color: #111;
     border-radius: 18px;
-     text-align: center;
-    transition: transform 0.25s ease,
-                border-color 0.25s ease;
+    transition: transform 0.25s ease, border-color 0.25s ease;
 }
 
-#Home .stat:hover {
-    transform: translateY(-5px);
-    border: 1px solid #ff6600;
-}
+#Home .stat:hover { transform: translateY(-5px); border: 1px solid #ff6600; }
+#Home .stat h2 { margin: 0 0 18px; color: #ff6600; font-size: 46px; }
+#Home .stat p { margin: 0; text-align: center; font-size: 16px; }
 
-#Home .stat h2 {
-    margin: 0 0 18px;
-    color: #ff6600;
-    font-size: 46px;
-}
-
-#Home .stat p {
-    margin: 0;
-    text-align: center;
-    font-size: 16px;
-}
-
-/* CELULARES */
 @media (max-width: 650px) {
-    #Home .stats {
-        gap: 20px;
-    }
-
-    #Home .stat {
-        width: min(100%, 340px);
-        min-height: 145px;
-    }
-
-    #Home .stat h2 {
-        font-size: 48px;
-    }
-
-    #Home .stat p {
-        font-size: 16px;
-    }
+    #Home .stats { gap: 20px; }
+    #Home .stat { width: min(100%, 340px); min-height: 145px; }
+    #Home .stat h2 { font-size: 48px; }
+    #Home .stat p { font-size: 16px; }
 }
-
-/* TÍTULO PRINCIPAL DE HOME */
-#Home .home-content h1 {
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif !important;
-    font-size: clamp(48px, 6vw, 78px) !important;
-    font-weight: 900 !important;
-    line-height: 1.05;
-    letter-spacing: -1px;
-    color: #ffffff !important;
-    text-align: left;
-}
-
-/* SOLO PRIME EN NARANJA */
-#Home .home-content h1 span {
-    color: #ff6600 !important;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif !important;
-    font-weight: 900 !important;
-}
-
-/* ===== HOME PRIME: ALINEACIÓN Y ESTILO DEPORTIVO ===== */
-
-#Home.principal {
-    text-align: left !important;
-    padding: 80px 7% 40px !important;
-    box-sizing: border-box;
-}
-
-#Home .home-content {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    text-align: left !important;
-}
-
-/* SPORTS PLATFORM */
-#Home .home-content > .subtitle {
-    text-align: left !important;
-    margin: 0 0 48px !important;
-    color: #ff6600;
-    font-size: 18px;
-    font-weight: 800;
-    letter-spacing: 5px;
-}
-
-/* TÍTULO PRINCIPAL */
-#Home .home-content h1 {
-    text-align: left !important;
-    margin: 0 !important;
-}
-
-/* DESCRIPCIÓN: TIPOGRAFÍA MÁS DEPORTIVA */
-#Home .home-content .home-description {
-    text-align: left !important;
-    margin: 38px 0 0 !important;
-    max-width: 800px;
-    color: #d0d0d0;
-    font-family: 'Poppins', Arial, sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.8;
-    letter-spacing: 0.2px;
-}
-
-/* ADAPTACIÓN A CELULARES */
-@media (max-width: 650px) {
-
-    #Home .home-content > .subtitle {
-        font-size: 13px;
-        letter-spacing: 3px;
-        margin-bottom: 32px !important;
-    }
-
-    #Home .home-content .home-description {
-        font-size: 16px;
-        line-height: 1.7;
-        margin-top: 28px !important;
-    }
-}
-
-/* ========================================
-   PRIME SPORTS DISCOVERY CAROUSEL - HOME
-======================================== */
-
+/* =======================================================
+   4. CARRUSEL DEL HOME
+======================================================= */
 .home-carousel {
     position: relative;
-    width: 90%;
-    max-width: 1150px;
-    margin: 45px auto;
+    width: 100%;
+    max-width: none;
+    margin: 0;
     overflow: hidden;
-    border-radius: 14px;
+    border: none;
+    border-radius: 0;
     background: #111;
-    border: 1px solid rgba(255, 102, 0, 0.35);
 }
 
-.home-carousel .carousel-item {
-    position: relative;
-}
+.home-carousel .carousel-item { position: relative; }
 
 .home-carousel .carousel-item img {
     display: block;
     width: 100%;
-    height: 480px;
+    height: calc(100vh - 90px);
     object-fit: cover;
     object-position: center;
     filter: brightness(0.55);
 }
 
+.home-carousel .carousel-item.text-slide {
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 90px);
+    background: #0a0a0a;
+    padding: 50px 7%;
+    box-sizing: border-box;
+}
+
+.home-carousel .text-slide .home-content {
+    width: 100%;
+    max-width: 850px;
+    margin: 0;
+}
+
 .home-carousel .carousel-caption {
     position: absolute;
-    right: 12%;
+    left: 50%;
+    right: auto;
     bottom: 15%;
-    left: 12%;
+    transform: translateX(-50%);
+    width: 85%;
+    max-width: 820px;
     padding: 20px;
-    text-align: left;
+    text-align: center;
     z-index: 2;
 }
 
@@ -944,16 +335,7 @@ section{
     margin-bottom: 0;
 }
 
-.home-carousel .carousel-control-prev,
-.home-carousel .carousel-control-next {
-    width: 8%;
-    z-index: 3;
-}
-
-.home-carousel .carousel-indicators {
-    z-index: 4;
-    margin-bottom: 18px;
-}
+.home-carousel .carousel-indicators { z-index: 4; margin-bottom: 18px; }
 
 .home-carousel .carousel-indicators [data-bs-target] {
     width: 28px;
@@ -971,55 +353,39 @@ section{
 }
 
 @media (max-width: 768px) {
-    .home-carousel {
-        width: 94%;
-        margin: 30px auto;
-    }
-
-    .home-carousel .carousel-item img {
-        height: 320px;
-    }
-
-    .home-carousel .carousel-caption {
-        right: 9%;
-        bottom: 12%;
-        left: 9%;
-        padding: 10px;
-    }
-
-    .home-carousel .carousel-label {
-        font-size: 10px;
-        letter-spacing: 2px;
-    }
-
-    .home-carousel .carousel-caption h2 {
-        font-size: 25px;
-    }
-
-    .home-carousel .carousel-caption p:not(.carousel-label) {
-        font-size: 12px;
-    }
+    .home-carousel .carousel-item img { height: 70vh; }
+    .home-carousel .carousel-item.text-slide { min-height: 70vh; padding: 35px 8%; }
+    .home-carousel .carousel-caption { bottom: 12%; padding: 10px; }
+    .home-carousel .carousel-label { font-size: 10px; letter-spacing: 2px; }
+    .home-carousel .carousel-caption h2 { font-size: 25px; }
+    .home-carousel .carousel-caption p:not(.carousel-label) { font-size: 12px; }
 }
 
-/* FIX: CONTROLES DEL CARRUSEL HOME */
+/* Flechas del carrusel: SIN fondo naranja, flecha blanca visible */
 #homeCarousel .carousel-control-prev,
 #homeCarousel .carousel-control-next {
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 10%;
-    padding: 0;
-    background: transparent !important;
-    border: none;
-    border-radius: 0;
-    opacity: 0.85;
+    width: 8% !important;
+    padding: 0 !important;
+    background: none !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    outline: none !important;
+    opacity: 0.9 !important;
     z-index: 5;
 }
 
 #homeCarousel .carousel-control-prev:hover,
-#homeCarousel .carousel-control-next:hover {
+#homeCarousel .carousel-control-next:hover,
+#homeCarousel .carousel-control-prev:focus,
+#homeCarousel .carousel-control-next:focus {
     background: rgba(0, 0, 0, 0.15) !important;
-    opacity: 1;
+    opacity: 1 !important;
 }
 
 #homeCarousel .carousel-control-prev-icon,
@@ -1027,4 +393,1956 @@ section{
     width: 35px;
     height: 35px;
     background-size: 100% 100%;
+    background-color: transparent !important;
+    filter: none !important;
+}
+/* =======================================================
+   5. SECCION COURTS (diseno claro)
+======================================================= */
+#Courts {
+    background-color: #fff;
+    color: #111;
+    padding: 40px max(24px, 3.5%);
+    text-align: left;
+    box-sizing: border-box;
+}
+
+#Courts .courts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+#Courts .courts-heading { min-width: 0; }
+
+#Courts .subtitle {
+    color: #ff4d1a;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 12px;
+}
+
+#Courts .subtitle::before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 2px;
+    background-color: #ff4d1a;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#Courts .courts-heading h2 {
+    color: #111;
+    text-align: left;
+    font-family: Impact, "Arial Narrow", sans-serif;
+    font-size: clamp(38px, 4.5vw, 64px);
+    font-weight: 900;
+    line-height: 0.92;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    margin: 0;
+    max-width: 650px;
+}
+
+#Courts .map-btn {
+    flex-shrink: 0;
+    background-color: #101426;
+    color: #fff;
+    padding: 19px 30px;
+    border: none;
+    border-radius: 40px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#Courts .map-btn:hover { background-color: #282e45; }
+
+#Courts .courts-filter { margin: 28px 0 32px; }
+
+#Courts .filter-btn {
+    background-color: #f0f2f5;
+    color: #111;
+    border: 1px solid #e1e4e8;
+    padding: 11px 22px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#Courts .courts-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 26px;
+    align-items: stretch;
+}
+
+#Courts .tarjeta {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f7f8fa;
+    color: #111;
+    border: 1px solid #e0e3e8;
+    border-radius: 19px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#Courts .tarjeta:hover {
+    background-color: #f7f8fa;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+#Courts .court-image { position: relative; width: 100%; height: 215px; overflow: hidden; }
+#Courts .court-image img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+
+#Courts .rating {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #fff;
+    color: #111;
+    padding: 8px 12px;
+    border-radius: 9px;
+    font-size: 13px;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+#Courts .court-info { display: flex; flex-direction: column; flex: 1; padding: 17px 22px 21px; }
+#Courts .court-info h3 { color: #111; font-family: Arial, sans-serif; font-size: 20px; font-weight: 700; line-height: 1.25; margin: 0 0 5px; }
+#Courts .location { color: #667085; font-size: 14px; margin: 0 0 18px; }
+#Courts .court-price { display: flex; align-items: baseline; gap: 9px; margin-top: auto; margin-bottom: 19px; }
+#Courts .price { color: #111; font-size: 28px; font-weight: 900; }
+#Courts .per-hour { color: #667085; font-size: 13px; }
+
+#Courts .book-btn {
+    width: 100%;
+    background: linear-gradient(100deg, #ff4d16, #ff7100);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 18px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 5px 12px rgba(255, 87, 0, 0.20);
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+#Courts .book-btn:hover { filter: brightness(0.94); transform: translateY(-2px); }
+
+@media (max-width: 1000px) {
+    #Courts .courts-container { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+    #Courts .courts-heading h2 { font-size: clamp(38px, 5vw, 54px); }
+    #Courts .court-image { height: 200px; }
+}
+
+@media (max-width: 650px) {
+    #Courts { padding: 35px 18px; }
+    #Courts .courts-header { flex-direction: column; align-items: flex-start; gap: 22px; }
+    #Courts .courts-heading h2 { font-size: clamp(36px, 9vw, 48px); }
+    #Courts .map-btn { padding: 14px 22px; font-size: 14px; }
+    #Courts .courts-filter { margin: 24px 0; }
+    #Courts .courts-container { grid-template-columns: 1fr; gap: 22px; }
+    #Courts .court-image { height: 220px; }
+    #Courts .court-info { padding: 17px; }
+}
+/* =======================================================
+   6. TARJETAS GENERICAS / CARDS / FORMULARIO
+======================================================= */
+.cards { text-align: center; }
+.tarjetas { text-align: center; }
+
+.tarjeta {
+    display: inline-block;
+    width: 280px;
+    margin: 15px;
+    padding: 30px;
+    background-color: #111;
+    border-radius: 12px;
+    text-align: center;
+    color: #fff;
+}
+
+.tarjeta:hover {
+    background-color: #222;
+    border: 1px solid #ff6600;
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+form { text-align: center; }
+
+input,
+textarea {
+    width: 350px;
+    padding: 12px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+textarea { height: 120px; }
+
+#Community,
+#Contact { text-align: center; }
+
+/* =======================================================
+   7. ESTADISTICAS GENERICAS (fuera del Home)
+======================================================= */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.stat {
+    background-color: #111;
+    width: 220px;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.stat h2 { color: #ff6600; font-size: 50px; }
+.stat p { color: #fff; }
+.stat:hover { transform: translateY(-5px); transition: 0.3s; border: 1px solid #ff6600; }
+
+/* =======================================================
+   8. SECCIONES GENERALES (Login, Teams, Impact, Blog...)
+======================================================= */
+#Profile,
+#FeaturedCourts,
+#Login,
+#Teams,
+#Impact,
+#Blog,
+#Contact { padding: 100px 60px; }
+
+#Profile h2,
+#FeaturedCourts h2,
+#Login h2,
+#Teams h2,
+#Impact h2,
+#Blog h2,
+#Contact h2 {
+    font-size: 55px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/* =======================================================
+   9. PRIME PROFILE DASHBOARD
+======================================================= */
+#Profile {
+    width: 100%;
+    padding: 85px 5%;
+    background-color: #080808;
+    box-sizing: border-box;
+}
+
+.profile-container {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.profile-heading { text-align: left; margin-bottom: 42px; }
+
+#Profile .subtitle {
+    color: #ff6600;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 22px;
+}
+
+.profile-heading h2 {
+    color: #fff;
+    font-family: Impact, "Arial Narrow", sans-serif;
+    font-size: 48px;
+    margin: 0 0 12px;
+}
+
+.profile-description { color: #b5b5b5; font-size: 16px; line-height: 1.6; max-width: 500px; margin: 0; }
+
+#Profile .profile-layout {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+    gap: 16px;
+    width: 100%;
+    align-items: stretch;
+    max-width: 1150px;
+    margin: 35px auto 0;
+}
+
+#Profile .profile-card,
+#Profile .upcoming-card {
+    width: 100%;
+    min-width: 0;
+    min-height: 250px;
+    padding: 35px;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #18191b;
+    border: 1px solid #353535;
+    border-radius: 26px;
+}
+
+#Profile .upcoming-card { display: flex; flex-direction: column; }
+
+.user-info { display: flex; align-items: center; gap: 15px; margin-bottom: 16px; }
+.user-avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #ff6600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+.user-info h3 { color: #fff; font-size: 16px; margin: 0 0 5px; }
+.user-info p { color: #999; font-size: 12px; margin: 0; }
+
+.sports-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 20px; }
+.sports-tags span {
+    background-color: #292a2c;
+    border: 1px solid #444;
+    color: #fff;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+}
+
+#Profile .profile-stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 15px;
+}
+.profile-stat { background-color: #242527; padding: 14px 5px; border-radius: 10px; text-align: center; }
+.profile-stat h3 { color: #ff6600; font-size: 23px; margin: 0 0 5px; }
+.profile-stat p { color: #999; font-size: 9px; margin: 0; }
+
+.upcoming-title { color: #ff6600; font-size: 12px; font-weight: bold; letter-spacing: 3px; margin: 0 0 20px; }
+.match-item { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+.match-date {
+    background-color: #292a2c;
+    border-radius: 12px;
+    min-width: 45px;
+    min-height: 55px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.match-date h3 { color: #fff; font-size: 20px; margin: 0; }
+.match-date span { color: #ff6600; font-size: 10px; font-weight: bold; }
+.match-info h3 { color: #fff; font-size: 14px; margin: 0 0 5px; }
+.match-info p { color: #999; font-size: 11px; margin: 0; line-height: 1.5; }
+
+@media (max-width: 850px) {
+    #Profile .profile-layout { grid-template-columns: 1fr !important; }
+    .profile-heading h2 { font-size: 38px; }
+}
+
+@media (max-width: 500px) {
+    #Profile { padding: 60px 20px; }
+    #Profile .profile-card,
+    #Profile .upcoming-card { padding: 20px; }
+    .profile-heading h2 { font-size: 30px; }
+    #Profile .profile-stats { gap: 6px; }
+}
+
+/* =======================================================
+   10. FOOTER
+======================================================= */
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+footer p { margin: 0; font-size: 16px; }
+
+/* ===== VENTANAS (MODALES) ===== */
+.reserva-content,
+.mapa-content {
+  background: #1a1a1a;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.modal-header {
+  border-bottom: 1px solid #333;
+}
+
+.modal-title {
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 1px;
+  color: #ff6600;
+}
+
+.reserva-court {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.reserva-price {
+  color: #ff6600;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+#reservaForm label {
+  display: block;
+  font-size: .85rem;
+  margin: 10px 0 4px;
+}
+
+#reservaForm input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #262626;
+  color: #fff;
+}
+
+.reserva-submit {
+  width: 100%;
+  margin-top: 18px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #ff6600;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.reserva-submit:hover {
+  background: #e65c00;
+}
+
+.reserva-ok {
+  display: none;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #4caf50;
+  padding: 20px 0;
+}
+
+/* MAPA */
+#mapa {
+  width: 100%;
+  height: 100%;
+  min-height: 70vh;
+}
+
+/* ===== MAPA CON PANEL LATERAL ===== */
+.mapa-layout { display: flex; width: 100%; height: calc(100vh - 60px); }
+
+.mapa-sidebar {
+  width: 320px; background: #1a1a1a; color: #fff;
+  display: flex; flex-direction: column; border-right: 1px solid #333;
+}
+.mapa-sidebar-top { padding: 16px; border-bottom: 1px solid #333; }
+.mapa-sidebar-top h6 {
+  font-family: 'Anton', sans-serif; letter-spacing: 1px;
+  color: #ff6600; margin: 0 0 4px;
+}
+#spacesCount { font-size: 12px; color: #999; }
+
+.mapa-filtros { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.mf-btn {
+  background: #262626; color: #ccc; border: 1px solid #444;
+  border-radius: 20px; padding: 4px 12px; font-size: 12px; cursor: pointer;
+}
+.mf-btn.active { background: #ff6600; color: #fff; border-color: #ff6600; }
+
+.mapa-lista { flex: 1; overflow-y: auto; padding: 12px; }
+.mapa-card {
+  display: flex; gap: 10px; background: #262626; border: 1px solid #333;
+  border-radius: 8px; padding: 12px; margin-bottom: 10px; cursor: pointer;
+  transition: .2s;
+}
+.mapa-card:hover { border-color: #ff6600; transform: translateY(-2px); }
+.mc-dot { width: 12px; height: 12px; border-radius: 50%; margin-top: 4px; flex-shrink: 0; }
+.mc-info { display: flex; flex-direction: column; }
+.mc-info b { font-size: 14px; }
+.mc-loc { font-size: 11px; color: #999; margin: 2px 0; }
+.mc-pill {
+  align-self: flex-start; background: #333; color: #ccc;
+  font-size: 10px; padding: 2px 8px; border-radius: 10px; margin: 4px 0;
+}
+.mc-price { color: #ff6600; font-weight: 600; font-size: 13px; }
+
+#mapa { flex: 1; height: 100%; }
+
+@media (max-width: 768px) {
+  .mapa-layout { flex-direction: column; }
+  .mapa-sidebar { width: 100%; height: 40%; }
+  #mapa { height: 60%; }
+}
+
+/* ===== SIGN IN (nuevo diseño) ===== */
+.signin-section { background: #f7f7f7; color: #1a1a1a; padding: 30px 6% 70px; }
+
+.signin-topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; }
+.signin-back { color: #1a1a1a; text-decoration: none; font-weight: 600; }
+.signin-back:hover { color: #ff6600; }
+
+.signin-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; max-width: 1100px; margin: 0 auto; }
+
+.signin-left .subtitle { color: #ff6600; }
+.signin-left h2 { font-family: 'Anton', sans-serif; letter-spacing: 1px; color: #1a1a1a; margin-bottom: 25px; }
+
+.signin-form label { display: block; font-size: 12px; font-weight: 600; letter-spacing: 1px; margin: 16px 0 6px; color: #555; }
+.signin-form input[type="email"],
+.signin-form input[type="password"] {
+  width: 100%; padding: 13px; border: 1px solid #ddd; border-radius: 8px;
+  background: #fff; color: #1a1a1a; font-size: 14px;
+}
+
+.signin-row { display: flex; justify-content: space-between; align-items: center; margin: 16px 0 6px; font-size: 13px; }
+.signin-check { display: flex; align-items: center; gap: 6px; font-weight: 500; color: #555; margin: 0; letter-spacing: 0; }
+.signin-link { color: #ff6600; text-decoration: none; }
+
+.signin-btn-main {
+  width: 100%; margin-top: 18px; padding: 14px; border: none; border-radius: 8px;
+  background: #ff6600; color: #fff; font-weight: 700; letter-spacing: 1px; cursor: pointer;
+}
+.signin-btn-main:hover { background: #e65c00; }
+
+.signin-divider { text-align: center; margin: 24px 0; position: relative; }
+.signin-divider::before { content: ""; position: absolute; top: 50%; left: 0; width: 100%; height: 1px; background: #ddd; }
+.signin-divider span { background: #f7f7f7; padding: 0 14px; position: relative; color: #888; font-size: 13px; }
+
+.signin-social { display: flex; gap: 14px; }
+.social-btn {
+  flex: 1; padding: 12px; border: 1px solid #ddd; border-radius: 8px;
+  background: #fff; color: #1a1a1a; font-weight: 600; cursor: pointer;
+}
+.social-btn:hover { border-color: #ff6600; }
+
+.signin-create { text-align: center; margin-top: 22px; font-size: 14px; color: #555; }
+.signin-create a { color: #ff6600; text-decoration: none; font-weight: 600; }
+
+/* FAQ */
+.signin-faq .accordion-item { border: 1px solid #e3e3e3; border-radius: 10px !important; margin-bottom: 12px; overflow: hidden; }
+.signin-faq .accordion-button { font-weight: 600; color: #1a1a1a; box-shadow: none; }
+.signin-faq .accordion-button:not(.collapsed) { background: #fff5ef; color: #ff6600; }
+.signin-faq .accordion-button:focus { box-shadow: none; border-color: #ff6600; }
+.signin-faq .accordion-body { color: #555; font-size: 14px; }
+
+@media (max-width: 768px) {
+  .signin-wrap { grid-template-columns: 1fr; gap: 35px; }
+}
+
+
+/* COMMUNITY SECTION */
+
+.community-section {
+    background: #080808;
+    color: white;
+    padding: 90px 6%;
+}
+
+.community-container {
+    max-width: 1250px;
+    margin: auto;
+}
+
+.community-heading {
+    margin-bottom: 45px;
+}
+
+.community-heading h2 {
+    font-size: 48px;
+    font-weight: 800;
+    margin: 12px 0;
+}
+
+.community-heading p:last-child {
+    color: #aaa;
+    font-size: 16px;
+    max-width: 550px;
+}
+
+/* MAIN FEATURE */
+
+.community-feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 350px;
+    background: #18191b;
+    border: 1px solid #303030;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.community-feature-content {
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.community-tag {
+    color: #ff6600;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.community-feature-content h3 {
+    font-size: 43px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 18px 0;
+}
+
+.community-feature-content p {
+    color: #aaa;
+    max-width: 390px;
+    line-height: 1.7;
+}
+
+.community-btn {
+    display: inline-block;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    padding: 13px 22px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.community-btn:hover {
+    background: white;
+    color: #111;
+}
+
+.community-feature-image {
+    min-height: 350px;
+}
+
+.community-feature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* COMMUNITY CARDS */
+
+.community-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.community-card {
+    background: #18191b;
+    border: 1px solid #303030;
+    border-radius: 15px;
+    padding: 30px;
+    min-height: 220px;
+    transition: 0.3s;
+}
+
+.community-card:hover {
+    transform: translateY(-6px);
+    border-color: #ff6600;
+}
+
+.community-number {
+    color: #ff6600;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.community-card h3 {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 22px 0 12px;
+}
+
+.community-card p {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 45px;
+}
+
+.community-card a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+
+.community-card a span {
+    color: #ff6600;
+    margin-left: 5px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
+    .community-feature {
+        grid-template-columns: 1fr;
+    }
+
+    .community-feature-image {
+        min-height: 260px;
+    }
+
+    .community-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .community-heading h2 {
+        font-size: 34px;
+    }
+
+    .community-feature-content {
+        padding: 28px;
+    }
+
+    .community-feature-content h3 {
+        font-size: 34px;
+    }
+
+    .community-card {
+        padding: 25px;
+    }
+
+}
+
+.community-heading {
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.community-heading p:last-child {
+    color: #aaa;
+    font-size: 16px;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+/* COMMUNITY INTERACTIVE BUTTONS */
+
+.community-action {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.community-action span {
+    color: #ff6600;
+    margin-left: 5px;
+}
+
+.community-action:hover {
+    color: #ff6600;
+}
+
+/* COMMUNITY MODALS */
+
+.prime-modal {
+    background: #111214;
+    color: white;
+    border: 1px solid #333;
+    border-radius: 16px;
+}
+
+.prime-modal .modal-header {
+    border-bottom: 1px solid #303030;
+    padding: 25px 30px;
+}
+
+.prime-modal .modal-header h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin: 8px 0 0;
+}
+
+.prime-modal .modal-body {
+    padding: 30px;
+}
+
+.modal-description {
+    color: #aaa;
+    margin-bottom: 25px;
+}
+
+/* PLAYER AND COURT CARDS */
+
+.directory-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.directory-card {
+    background: #1b1c1f;
+    border: 1px solid #333;
+    border-radius: 13px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.directory-card:hover {
+    border-color: #ff6600;
+    transform: translateY(-4px);
+}
+
+.directory-card img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    display: block;
+}
+
+.directory-card-content {
+    padding: 18px;
+}
+
+.directory-card h3 {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.directory-card p {
+    color: #aaa;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.directory-label {
+    display: inline-block;
+    color: #ff6600;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.directory-card a {
+    color: #ff6600;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* CREATE TEAM FORM */
+
+#teamForm {
+    text-align: left;
+}
+
+#teamForm label {
+    display: block;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 17px 0 7px;
+}
+
+#teamForm input,
+#teamForm select,
+#teamForm textarea {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 12px;
+    background: #202124;
+    color: white;
+    border: 1px solid #414141;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+#teamForm input[type="file"] {
+    padding: 9px;
+}
+
+#teamForm select option {
+    background: #202124;
+}
+
+#teamForm textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.team-preview {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 15px;
+    border: 2px solid #ff6600;
+}
+
+.community-submit {
+    width: 100%;
+    margin-top: 25px;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background: #ff6600;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.community-submit:hover {
+    background: white;
+    color: #111;
+}
+
+.team-message {
+    color: #ff6600;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+/* CREATED TEAMS */
+
+.created-teams-area {
+    margin-top: 55px;
+}
+
+.created-teams-area > h3 {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 22px;
+}
+
+.empty-teams {
+    color: #888;
+    font-size: 14px;
+}
+
+@media (max-width: 850px) {
+    .directory-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 550px) {
+    .directory-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .prime-modal .modal-header,
+    .prime-modal .modal-body {
+        padding: 20px;
+    }
+}
+
+.player-card {
+    min-height: 190px;
+    display: flex;
+    align-items: center;
+}
+
+.player-card .directory-card-content {
+    width: 100%;
+}
+
+.community-action {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* =======================================================
+   PRIME IMPACT - PROFESSIONAL DESIGN
+======================================================= */
+
+#Impact {
+    background: #ffffff;
+    padding: 110px 7%;
+    color: #111;
+}
+
+.impact-container {
+    max-width: 1250px;
+    margin: auto;
+}
+
+/* HEADING */
+
+.impact-heading {
+    margin-bottom: 55px;
+    max-width: 750px;
+}
+
+#Impact .subtitle {
+    color: #ff6600;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+}
+
+#Impact .impact-heading h2 {
+    color: #111;
+    font-size: clamp(40px, 5vw, 65px);
+    line-height: 1.05;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+#Impact .impact-heading h2 span {
+    color: #ff6600;
+}
+
+.impact-description {
+    color: #777;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 500px;
+}
+
+/* ONE LARGE STATISTICS CARD */
+
+.impact-stats-card {
+    background: #080808;
+    border: 1px solid #252525;
+    border-radius: 8px;
+    padding: 45px 35px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+#Impact .stat {
+    padding: 10px 25px;
+    border-right: 1px solid #333;
+    transition: 0.3s ease;
+}
+
+#Impact .stat:last-child {
+    border-right: none;
+}
+
+#Impact .stat:hover h3 {
+    transform: scale(1.08);
+    color: #ffffff;
+}
+
+#Impact .stat-number {
+    color: #ff8a3d;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+#Impact .stat h3 {
+    color: #ff6600;
+    font-size: clamp(38px, 4vw, 55px);
+    font-weight: 900;
+    margin: 22px 0 8px;
+    transition: 0.3s ease;
+}
+
+#Impact .stat p {
+    color: #e0e0e0;
+    font-size: 13px;
+    margin: 0;
+}
+
+/* TESTIMONIALS */
+
+.impact-testimonials {
+    margin-top: 85px;
+}
+
+.testimonials-heading {
+    margin-bottom: 30px;
+}
+
+.testimonials-heading h3 {
+    color: #111;
+    font-size: 32px;
+    font-weight: 900;
+    margin-top: 8px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.testimonial {
+    background: #f7f7f7;
+    border: 1px solid #e8e8e8;
+    border-radius: 6px;
+    padding: 30px;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+    border-color: #ff6600;
+}
+
+.quote-mark {
+    color: #ff6600;
+    font-size: 55px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.testimonial > p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.8;
+    min-height: 100px;
+    margin: 15px 0 25px;
+}
+
+.testimonial-author {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-top: 1px solid #ddd;
+    padding-top: 18px;
+}
+
+.testimonial-author strong {
+    color: #111;
+    font-size: 14px;
+}
+
+.testimonial-author span {
+    color: #888;
+    font-size: 12px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .impact-stats-card {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+    }
+
+    #Impact .stat:nth-child(2) {
+        border-right: none;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 550px) {
+
+    #Impact {
+        padding: 75px 22px;
+    }
+
+    .impact-stats-card {
+        padding: 25px 15px;
+    }
+
+    #Impact .stat {
+        padding: 15px;
+    }
+
+    .testimonials-heading h3 {
+        font-size: 26px;
+    }
+}
+
+/* =======================================================
+   PRIME IMPACT - FINAL REFINEMENTS
+======================================================= */
+
+/* Move heading to the right */
+
+.impact-heading {
+    margin-left: auto;
+    text-align: left;
+    max-width: 750px;
+}
+
+.impact-description {
+    margin-left: auto;
+}
+
+/* Wider, more rounded statistics card */
+
+.impact-stats-card {
+    width: 100%;
+    min-height: 220px;
+    border-radius: 16px;
+    padding: 38px 45px;
+}
+
+/* More balanced statistics */
+
+#Impact .stat {
+    padding: 12px 28px;
+}
+
+#Impact .stat h3 {
+    font-size: clamp(42px, 4vw, 58px);
+}
+
+/* Smaller and more discreet testimonials */
+
+.impact-testimonials {
+    margin-top: 65px;
+}
+
+.testimonials-heading {
+    margin-bottom: 22px;
+}
+
+.testimonials-heading h3 {
+    font-size: 25px;
+}
+
+.testimonial-grid {
+    gap: 18px;
+}
+
+.testimonial {
+    padding: 22px;
+    border-radius: 10px;
+    background: #fafafa;
+}
+
+.quote-mark {
+    font-size: 38px;
+}
+
+.testimonial > p {
+    font-size: 12px;
+    line-height: 1.7;
+    min-height: 75px;
+    margin: 8px 0 18px;
+}
+
+.testimonial-author {
+    padding-top: 12px;
+}
+
+.testimonial-author strong {
+    font-size: 12px;
+}
+
+.testimonial-author span {
+    font-size: 11px;
+}
+
+/* Mobile alignment */
+
+@media (max-width: 550px) {
+    .impact-heading {
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .impact-description {
+        margin-left: 0;
+    }
+}
+
+/* IMPACT HEADING - LEFT ALIGNMENT */
+
+.impact-heading {
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
+}
+
+.impact-description {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+#Impact .impact-heading h2 {
+    text-align: left;
+    margin-left: 0;
+}
+
+
+/* =======================================================
+   PRIME BLOG & TRAINING PLATFORM
+======================================================= */
+
+#Blog {
+    background: #fff;
+    color: #111;
+    padding: 110px 7%;
+}
+
+.blog-container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+/* BLOG HEADING */
+
+.blog-heading {
+    margin-bottom: 45px;
+}
+
+#Blog .blog-heading .subtitle,
+#Blog .subtitle {
+    color: #ff6600;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+#Blog .blog-heading h2 {
+    color: #111;
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1.05;
+    font-weight: 900;
+    margin: 0;
+}
+
+/* MAIN BLOG CARD */
+
+.blog-card {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    background: #0a0a0a;
+    border-radius: 15px;
+    overflow: hidden;
+    min-height: 390px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.13);
+}
+
+.blog-image {
+    position: relative;
+    min-height: 390px;
+    overflow: hidden;
+}
+
+.blog-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 390px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.blog-card:hover .blog-image img {
+    transform: scale(1.04);
+}
+
+.blog-image-tag {
+    position: absolute;
+    bottom: 22px;
+    left: 22px;
+    background: #ff6600;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    padding: 10px 14px;
+}
+
+.blog-content {
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blog-category {
+    color: #ff6600;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-bottom: 17px;
+}
+
+.blog-content h3 {
+    color: #fff;
+    font-size: clamp(25px, 3vw, 38px);
+    font-weight: 900;
+    line-height: 1.15;
+    margin-bottom: 18px;
+}
+
+.blog-description {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.blog-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-top: 1px solid #333;
+    padding-top: 18px;
+    margin-bottom: 25px;
+}
+
+.blog-meta span {
+    color: #999;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.blog-read-btn,
+.blog-back-btn,
+.blog-read-btn:focus {
+    cursor: pointer;
+}
+
+.blog-read-btn {
+    background: #ff6600;
+    border: 1px solid #ff6600;
+    color: #fff;
+    padding: 14px 22px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    align-self: flex-start;
+    transition: 0.3s ease;
+}
+
+.blog-read-btn span {
+    margin-left: 15px;
+}
+
+.blog-read-btn:hover {
+    background: #fff;
+    color: #111;
+    border-color: #fff;
+}
+
+/* TRAINING PLATFORM */
+
+.training-platform {
+    margin-top: 75px;
+    padding-top: 55px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.training-platform-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.training-platform-heading h2 {
+    color: #111;
+    font-size: clamp(38px, 5vw, 60px);
+    font-weight: 900;
+    line-height: 1.05;
+    margin-bottom: 15px;
+}
+
+.training-platform-heading h2 span {
+    color: #ff6600;
+}
+
+.training-platform-heading p:not(.subtitle) {
+    color: #777;
+    font-size: 14px;
+}
+
+.blog-back-btn,
+.details-back {
+    background: transparent;
+    border: 1px solid #ccc;
+    color: #333;
+    padding: 12px 17px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.blog-back-btn:hover,
+.details-back:hover {
+    border-color: #ff6600;
+    color: #ff6600;
+}
+
+/* TABS */
+
+.training-tabs {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 40px;
+}
+
+.training-tab {
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    color: #888;
+    padding: 15px 22px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.training-tab.active {
+    color: #ff6600;
+    border-bottom-color: #ff6600;
+}
+
+/* ROUTINES */
+
+.routine-intro {
+    margin-bottom: 30px;
+}
+
+.routine-intro h3 {
+    color: #111;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.routine-intro > p:last-child {
+    color: #777;
+    font-size: 14px;
+}
+
+.routine-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 17px;
+}
+
+.routine-card {
+    background: #101010;
+    color: white;
+    padding: 27px 22px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    min-height: 290px;
+    transition: 0.3s ease;
+}
+
+.routine-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.routine-level {
+    color: #ff873d;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.routine-card h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 24px 0 12px;
+}
+
+.routine-card > p {
+    color: #aaa;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.routine-time {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-top: auto;
+    padding: 20px 0;
+}
+
+.routine-time strong {
+    color: #ff6600;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.routine-time span {
+    color: #999;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+.routine-select {
+    background: transparent;
+    border: 1px solid #ff6600;
+    color: white;
+    padding: 12px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.routine-select:hover {
+    background: #ff6600;
+}
+
+/* ROUTINE DETAILS */
+
+.routine-details {
+    margin-top: 40px;
+    background: #f6f6f6;
+    border-radius: 10px;
+    padding: 35px;
+    border: 1px solid #e5e5e5;
+}
+
+.routine-details > .subtitle {
+    margin-top: 30px;
+}
+
+.routine-details h3 {
+    color: #111;
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+#routineDetailDescription {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.routine-detail-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 20px 0 30px;
+}
+
+.routine-detail-meta span {
+    background: #111;
+    color: #ff873d;
+    padding: 10px 14px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.routine-details h4 {
+    color: #111;
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom: 18px;
+}
+
+.exercise-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    background: white;
+    border-left: 3px solid #ff6600;
+    padding: 16px 18px;
+    margin-bottom: 9px;
+}
+
+.exercise-row strong {
+    color: #222;
+    font-size: 13px;
+}
+
+.exercise-row span {
+    color: #888;
+    font-size: 12px;
+}
+
+.training-primary-btn {
+    background: #ff6600;
+    color: white;
+    border: 1px solid #ff6600;
+    padding: 15px 24px;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.training-primary-btn:hover {
+    background: #111;
+    border-color: #111;
+}
+
+.routine-details .training-primary-btn {
+    margin-top: 25px;
+}
+
+/* CUSTOM FORM */
+
+.custom-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.custom-field {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #f7f7f7;
+    border: 1px solid #e7e7e7;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.custom-field > label {
+    color: #111;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.custom-field select,
+.custom-field textarea {
+    width: 100%;
+    padding: 13px;
+    background: white;
+    border: 1px solid #ddd;
+    color: #333;
+    font-family: inherit;
+    font-size: 13px;
+    outline: none;
+}
+
+.custom-field select:focus,
+.custom-field textarea:focus {
+    border-color: #ff6600;
+}
+
+.custom-field small {
+    color: #888;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.schedule-options,
+.goal-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px;
+}
+
+.schedule-options label,
+.goal-options label {
+    color: #555;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.schedule-options input,
+.goal-options input {
+    accent-color: #ff6600;
+    width: 15px;
+    height: 15px;
+}
+
+.custom-field .sub-label {
+    color: #333;
+    font-size: 11px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.notes-field {
+    margin-top: 25px;
+}
+
+.custom-field textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.save-plan-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.save-plan-area p {
+    color: #888;
+    font-size: 12px;
+}
+
+.saved-plan-message {
+    margin-top: 25px;
+    padding: 20px;
+    border-left: 4px solid #ff6600;
+    background: #f5f5f5;
+}
+
+.saved-plan-message strong {
+    color: #111;
+    font-size: 13px;
+}
+
+.saved-plan-message p {
+    color: #777;
+    font-size: 12px;
+    margin: 7px 0 0;
+}
+
+/* HIDDEN ELEMENTS */
+
+#Blog [hidden] {
+    display: none !important;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+    .routine-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-content {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    #Blog {
+        padding: 75px 22px;
+    }
+
+    .blog-card {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-image,
+    .blog-image img {
+        min-height: 250px;
+        height: 250px;
+    }
+
+    .training-platform-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .custom-form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .routine-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .training-tabs {
+        gap: 0;
+    }
+
+    .training-tab {
+        padding: 13px 10px;
+        font-size: 10px;
+    }
+
+    .blog-content {
+        padding: 25px;
+    }
+
+    .routine-details {
+        padding: 22px;
+    }
+
+    .exercise-row {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .schedule-options,
+    .goal-options {
+        grid-template-columns: 1fr;
+    }
+
+    .save-plan-area {
+        align-items: stretch;
+        flex-direction: column;
+    }
 }
