@@ -2346,3 +2346,156 @@ footer p { margin: 0; font-size: 16px; }
         flex-direction: column;
     }
 }
+
+/* ---------- 1. BASE: evita desbordes ---------- */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+img { max-width: 100%; }
+
+input, textarea, select {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto !important;
+    height: auto;
+    margin: 0;
+}
+
+/* ---------- 2. TABLET (<=900px) ---------- */
+@media (max-width: 900px) {
+
+    /* Header en dos filas: logo arriba, menu abajo */
+    .header-prime {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 14px 4%;
+        min-height: auto;
+    }
+    .logo { width: 100%; display: flex; justify-content: center; }
+    .logo img { height: 50px; }
+    .header-prime nav {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 22px;
+    }
+    .header-prime nav a { font-size: 14px; }
+    .header-prime nav .signin-btn { padding: 10px 20px; font-size: 13px; }
+}
+
+/* ---------- 3. MOVIL (<=768px) ---------- */
+@media (max-width: 768px) {
+
+    section { padding: 60px 18px; }
+
+    /* HERO */
+    #Home .home-content h1 { font-size: clamp(30px, 8.5vw, 44px) !important; }
+    #Home .home-content > .subtitle {
+        font-size: 12px;
+        letter-spacing: 3px;
+        margin-bottom: 26px !important;
+    }
+    #Home .home-content .home-description {
+        font-size: 15px;
+        line-height: 1.7;
+        margin-top: 26px !important;
+    }
+    .home-carousel .carousel-item img { height: 62vh; height: 62svh; }
+    .home-carousel .carousel-item.text-slide {
+        min-height: 66vh;
+        min-height: 66svh;
+        padding: 28px 20px;
+    }
+
+    /* ESTADISTICAS HOME */
+    #Home .stats { padding: 45px 18px 55px !important; gap: 16px; }
+    #Home .stat { width: 100%; min-height: auto; padding: 26px 18px; }
+    #Home .stat h2 { font-size: 40px; }
+
+    /* PROFILE */
+    #Profile { padding: 60px 18px; }
+    .profile-heading h2 { font-size: 32px; }
+
+    /* COURTS */
+    #Courts { padding: 40px 18px; }
+    #Courts .map-btn { width: 100%; }
+
+    /* SIGN IN */
+    .signin-section { padding: 22px 18px 55px; }
+    .signin-topbar { flex-wrap: wrap; gap: 12px; }
+    .signin-topbar .map-btn { width: 100%; padding: 14px 18px; font-size: 13px; }
+    .signin-form { text-align: left; }
+    .signin-form input[type="email"],
+    .signin-form input[type="password"] { margin: 0; width: 100%; }
+
+    /* COMMUNITY */
+    .community-section { padding: 60px 18px; }
+    .community-feature-content { padding: 30px; }
+    .community-feature-content h3 { font-size: 34px; }
+
+    /* IMPACT */
+    #Impact { padding: 70px 18px; }
+    #Impact .impact-heading h2 { font-size: 38px; }
+    #Impact .impact-stats-card { grid-template-columns: repeat(2, 1fr); }
+    #Impact .stat { padding: 12px 18px; border-right: none; }
+
+    /* BLOG */
+    #Blog { padding: 70px 18px; }
+    .blog-card { min-height: auto; }
+
+    /* CONTACT */
+    #Contact { padding: 65px 18px; }
+    #Contact h2 { font-size: 34px; }
+    #Contact form br { display: none; }
+    #Contact form input,
+    #Contact form textarea { width: 100%; margin: 0 0 14px; }
+
+    /* FORMULARIOS EN MODALES */
+    #reservaForm input { margin: 6px 0; }
+    .custom-field { padding: 18px; }
+
+    /* MAPA: evita choque de alturas */
+    #mapa { min-height: 0; }
+    .mapa-sidebar { min-height: 0; }
+
+    /* FOOTER */
+    footer { padding: 26px 18px; margin-top: 35px; }
+}
+
+/* ---------- 4. CELULARES PEQUENOS (<=480px) ---------- */
+@media (max-width: 480px) {
+
+    section { padding: 50px 15px; }
+
+    #Home .home-content h1 { font-size: clamp(28px, 9vw, 34px) !important; }
+    .home-carousel .carousel-item img { height: 55vh; height: 55svh; }
+    .home-carousel .carousel-item.text-slide { min-height: 60vh; min-height: 60svh; }
+    .home-carousel .carousel-caption h2 { font-size: 22px; }
+
+    #Profile .profile-card,
+    #Profile .upcoming-card { padding: 20px; }
+    .profile-heading h2 { font-size: 26px; }
+
+    .community-heading h2 { font-size: 28px; }
+    .community-feature-content { padding: 24px; }
+    .community-feature-content h3 { font-size: 28px; }
+
+    #Impact .impact-heading h2 { font-size: 32px; }
+    #Impact .stat h3 { font-size: 34px; }
+
+    .blog-content { padding: 22px; }
+    .blog-content h3 { font-size: 24px; }
+
+    #Contact h2 { font-size: 28px; }
+
+    .training-tabs { flex-wrap: wrap; }
+    .training-tab { flex: 1 1 100%; }
+
+    .routine-details { padding: 20px; }
+    .exercise-row { flex-direction: column; gap: 6px; }
+}
